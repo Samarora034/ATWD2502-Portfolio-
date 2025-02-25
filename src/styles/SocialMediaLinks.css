@@ -1,36 +1,37 @@
 /* Container */
 .social-media-links {
   text-align: center;
-  margin: 50px 0;
+  margin: var(--spacing-lg) 0;
 }
 
 .social-media-links h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color:white;
+  font-size: var(--font-size-heading);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-color);
 }
 
 /* Icons */
 .icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: var(--spacing-md);
 }
 
 .icons a {
-  font-size: 2.5rem;
-  color: white;
-  transition: transform 0.3s, color 0.3s;
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  transition: transform var(--transition-normal), color var(--transition-normal);
 }
 
 .icons a:hover {
   transform: translateY(-5px);
-  color: #4a90e2;
+  color: var(--secondary-color);
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
   .icons a {
-    font-size: 2rem;
+    font-size: var(--font-size-small);
   }
 }
+

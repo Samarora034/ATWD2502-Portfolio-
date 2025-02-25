@@ -1,21 +1,20 @@
 /* Section Styles */
 .projects-section {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+  padding: var(--spacing-lg) var(--spacing-md);
   text-align: center;
 }
 
 .projects-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #333;
+  font-size: var(--font-size-heading);
+  margin-bottom: var(--spacing-lg);
+  color: var(--gray-light);
 }
 
 /* Grid Layout */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: var(--spacing-md);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -23,10 +22,10 @@
 /* Project Card */
 .project-card {
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow);
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .project-card img {
@@ -36,27 +35,27 @@
 }
 
 .project-content {
-  padding: 20px;
+  padding: var(--spacing-md);
 }
 
 .project-content h3 {
-  margin: 10px 0;
-  color: #333;
+  margin: var(--spacing-xs) 0;
+  color: var(--gray-dark);
 }
 
 .project-content p {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 15px;
+  color: var(--gray-medium);
+  font-size: var(--font-size-small);
+  margin-bottom: var(--spacing-sm);
 }
 
 /* Links */
 .project-links a {
-  margin-right: 10px;
-  color: #4a90e2;
+  margin-right: var(--spacing-sm);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color var(--transition-normal);
 }
 
 .project-links a:hover {
@@ -68,3 +67,4 @@
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
+

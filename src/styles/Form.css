@@ -3,16 +3,16 @@
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-background);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow);
   text-align: center;
 }
 
 .contact-form-container h2 {
-  font-size: 2rem;
+  font-size: var(--font-size-heading);
   margin-bottom: 20px;
-  color: #333;
+  color: var(--text-color);
 }
 
 /* Form */
@@ -26,35 +26,35 @@
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
+  border: 1px solid var(--gray-dark);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-base);
   outline: none;
-  transition: border-color 0.3s;
+  transition: border-color var(--transition-normal);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border-color: #4a90e2;
+  border-color: var(--primary-color);
 }
 
 /* Button */
 button {
   padding: 10px 20px;
-  background-color: #4a90e2;
+  background-color: var(--primary-color);
   border: none;
-  color: white;
-  border-radius: 5px;
-  font-size: 1rem;
+  color: var(--text-color);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-base);
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color var(--transition-normal);
+  margin-top: 15px;
 }
 
 button:hover {
-  background-color: #357ab8;
+  background-color: var(--link-hover-color);
 }
 
 /* Textarea */
@@ -71,6 +71,11 @@ textarea {
   }
 
   .contact-form-container h2 {
-    font-size: 1.8rem;
+    font-size: var(--font-size-subheading);
+  }
+
+  button {
+    margin-top: 10px;
   }
 }
+

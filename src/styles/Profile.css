@@ -1,35 +1,39 @@
 /* Container Styling */
 .profile {
-  gap: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--gray-light);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow);
   max-width: 600px;
-  margin: 20px auto;
-  transition: transform 0.2s, box-shadow 0.2s;
+  margin: var(--spacing-md) auto;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* Icon Styling */
-.profile svg {
-  color: #4a90e2;
-  border: 2px solid #4a90e2;
-  border-radius: 50%;
-  padding: 10px;
-  background-color: white;
+/* Profile Image */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  margin: 0 auto var(--spacing-md);
+  overflow: hidden;
+  border: 1px solid;
 }
 
 /* Profile Info */
 .profile-info h2 {
   margin: 0;
-  font-size: 1.8rem;
-  
+  font-size: var(--font-size-subheading);
 }
 
 .profile-info p {
-  margin: 5px 0;
-  font-size: 1rem;
-  color: #555;
+  margin: var(--spacing-xs) 0;
+  font-size: var(--font-size-base);
+  color: var(--gray-medium);
   line-height: 1.5;
 }
 
@@ -39,10 +43,3 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .profile {
-    flex-direction: column;
-    text-align: center;
-  }
-}

@@ -1,0 +1,49 @@
+/* Color Palette */
+:root {
+    /* Primary Colors */
+    --primary-color: #ff6f61; /* Vibrant accent color */
+    --secondary-color: #4a90e2; /* Supporting accent */
+    --background-color: #1e1e1e; /* Dark background */
+    --card-background: #2a2a2a; /* Card elements */
+    --text-color: #ffffff; /* Main text */
+    --muted-text-color: #bbb; /* Less prominent text */
+    --link-hover-color: #ff6f61; /* Link hover state */
+
+    /* Grayscale */
+    --gray-light: #f1f1f1;
+    --gray-medium: #888;
+    --gray-dark: #444;
+
+    /* Alerts & States */
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --error-color: #dc3545;
+
+    /* Shadows & Effects */
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    --blur-effect: blur(10px);
+
+    /* Typography */
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --font-size-heading: 2rem;
+    --font-size-subheading: 1.5rem;
+    --font-size-small: 0.9rem;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+    /* Border Radius */
+    --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 30px;
+
+    /* Transition */
+    --transition-fast: 0.2s;
+    --transition-normal: 0.3s;
+    --transition-slow: 0.5s;
+}

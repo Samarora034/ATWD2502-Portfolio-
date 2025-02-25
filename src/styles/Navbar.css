@@ -1,46 +1,47 @@
 /* Basic Navbar Styling */
 .navbar-section {
-  background-color: black;
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 20px 20px;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-md);
   position: fixed;
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: all var(--transition-normal) ease;
 }
 
 /* Floating and Blurred Effect */
 .scrolled {
-  top: 20px;
+  top: var(--spacing-sm);
   width: 50%;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 10px 30px;
-  border-radius: 30px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-md);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Navbar Links */
 .navbar-section a {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-color);
   font-weight: 600;
   text-decoration: none;
-  transition: color 0.3s;
-  padding: 5px 15px;
+  transition: color var(--transition-normal);
+  padding: var(--spacing-xs) var(--spacing-sm);
 }
 
 /* Hover Effect */
 .navbar-section a:hover {
-  color: rgb(137, 216, 76);
+  color: var(--primary-color);
 }
 
 /* Active Link Styling */
 .navbar-section a.active {
-  color: rgb(137, 216, 76);
+  color: var(--primary-color);
   text-decoration: underline;
-  transition: all 0.3s ease;
+  transition: all var(--transition-normal) ease;
 }
+

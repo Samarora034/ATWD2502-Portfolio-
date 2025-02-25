@@ -1,17 +1,18 @@
 import React from "react";
-import { FaUser } from "react-icons/fa";
+import profileImage from "../assets/profile.jpg";
 import "../styles/Profile.css";
 
 const Profile = () => {
   return (
     <div className="profile">
-      <FaUser size={100} />
+      <img src={profileImage} alt="profile" className="profile-image" />
       <div className="profile-info">
-        <h2>John Doe</h2>
+        <h2>Saksham Midha</h2>
         <p>
-          A web developer with over 5 years of experience building web
-          applications with a focus on responsive design, performance, and
-          usability.
+          A third-year CSE student with a passion for web development, skilled
+          in building responsive and user-friendly web applications. Proficient
+          in Three.js for interactive 3D experiences and strong in data
+          structures and algorithms.
         </p>
       </div>
     </div>

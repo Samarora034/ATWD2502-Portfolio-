@@ -1,27 +1,31 @@
 import React from "react";
 import "../styles/ProjectsSection.css";
+import iphone from "../assets/Project1.png";
+import Amusic from "../assets/Project2.png";
+import starwars from "../assets/Project3.png";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1.",
-    image: "https://via.placeholder.com/300",
-    demoLink: "#",
-    githubLink: "#",
+    title: "iPhone 15 Webpage",
+    description:
+      "A webpage for the iPhone 15 made in React and threejs to provide an immersive experience to the user.",
+    image: iphone,
+    demoLink: "https://iphone-swart.vercel.app/",
+    githubLink: "https://github.com/Samarora034/iphone",
   },
   {
-    title: "Project 2",
-    description: "A brief description of Project 2.",
-    image: "https://via.placeholder.com/300",
-    demoLink: "#",
-    githubLink: "#",
+    title: "Amusic",
+    description: "A music hosting website made using HTML, CSS and react.",
+    image: Amusic,
+    demoLink: "https://amusic-peach.vercel.app/",
+    githubLink: "https://github.com/Samarora034/Amusic",
   },
   {
-    title: "Project 3",
-    description: "A brief description of Project 3.",
-    image: "https://via.placeholder.com/300",
-    demoLink: "#",
-    githubLink: "#",
+    title: "Star Wars",
+    description: "A star wars game built in HTML, CSS, JS and THREEjs.",
+    image: starwars,
+    demoLink: "https://main-game-eight.vercel.app/",
+    githubLink: "https://github.com/Samarora034/main_game",
   },
 ];
 
