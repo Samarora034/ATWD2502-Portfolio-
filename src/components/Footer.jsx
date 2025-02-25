@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Your Name. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Saksham Midha. All Rights Reserved.</p>
         <p>Built with React, CSS, and ❤️</p>
         <p>
           Designed by 
