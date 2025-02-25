@@ -1,5 +1,6 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
+import "../styles/Skills.css";
 
 const Skills = () => {
   return (

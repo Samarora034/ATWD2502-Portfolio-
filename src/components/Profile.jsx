@@ -1,5 +1,6 @@
-import React from 'react';
-import { FaUser } from 'react-icons/fa';
+import React from "react";
+import { FaUser } from "react-icons/fa";
+import "../styles/Profile.css";
 
 const Profile = () => {
   return (
@@ -18,4 +19,3 @@ const Profile = () => {
 };
 
 export default Profile;
-

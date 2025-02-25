@@ -1,0 +1,75 @@
+/* Skills Section */
+.skills {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Skills List */
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Skill Card */
+.skill {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill svg {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 0;
+  height: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4a90e2;
+  transition: width 0.5s ease;
+}
+
+/* Hover Effect */
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .skills h2 {
+    font-size: 2rem;
+  }
+
+  .skill-list {
+    grid-template-columns: 1fr;
+  }
+}

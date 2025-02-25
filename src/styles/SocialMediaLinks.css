@@ -1,0 +1,36 @@
+/* Container */
+.social-media-links {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.social-media-links h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:white;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icons a {
+  font-size: 2.5rem;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icons a:hover {
+  transform: translateY(-5px);
+  color: #4a90e2;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .icons a {
+    font-size: 2rem;
+  }
+}
